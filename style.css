@@ -1,0 +1,470 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #263746;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    padding: 85px 8%;
+}
+
+
+/* NAVIGATION */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #123c56;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #159bb0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #263746;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #159bb0;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+    background:
+    linear-gradient(rgba(5, 31, 48, 0.55),
+                    rgba(5, 31, 48, 0.55)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Galle_Fort_view_with_the_sunset.jpg?width=1800");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 650px;
+}
+
+.small-title {
+    color: #9ee7ed;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #7de0e7;
+}
+
+.hero-content > p:not(.small-title) {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    background: #159bb0;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #106c82;
+    transform: translateY(-3px);
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.section-label {
+    color: #159bb0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.about-content h2,
+.section-heading h2 {
+    color: #123c56;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #647582;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.text-btn {
+    color: #159bb0;
+    font-weight: 600;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading > p:last-child {
+    color: #71818c;
+    font-size: 14px;
+}
+
+
+/* ATTRACTIONS */
+
+.attractions {
+    background: #f1f8fa;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.place-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+}
+
+.place-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 23px;
+}
+
+.card-content h3 {
+    color: #123c56;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.card-content p {
+    color: #71818c;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    display: inline-block;
+    background: #e4f5f7;
+    color: #117d91;
+    padding: 10px 17px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ACTIVITIES */
+
+.activity-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.activity {
+    padding: 28px 20px;
+    background: #f1f8fa;
+    border-radius: 8px;
+    border-bottom: 3px solid #159bb0;
+}
+
+.activity span {
+    color: #159bb0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.activity h3 {
+    margin: 15px 0;
+    font-size: 17px;
+    color: #123c56;
+}
+
+.activity p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #71818c;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    background: #f1f8fa;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+
+
+/* CONTACT */
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d5e0e5;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus {
+    border-color: #159bb0;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    align-self: flex-start;
+}
+
+#formMessage {
+    color: #117d91;
+    font-size: 13px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #123c56;
+    color: white;
+    padding: 45px 8%;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #d3e1e8;
+    margin-bottom: 18px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 13px;
+}
+
+.copyright {
+    border-top: 1px solid #416175;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activity-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .hero {
+        height: 520px;
+        padding: 0 7%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .card-container,
+    .activity-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
